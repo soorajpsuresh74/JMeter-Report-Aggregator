@@ -14,22 +14,19 @@ This repository contains a Python script that aggregates and analyzes JMeter res
 - **Throughput Calculation**: Computes the number of requests per second.
 - **Data Size Analysis**: Computes the average sent and received bytes in kilobytes.
 - **CSV Export**: Exports aggregated results to a CSV file.
+- **User Input for File Path**: Users can specify the path to their JMeter CSV file.
 
 ## Prerequisites
 
 - Python 3.x
-- `pandas` library (will be installed automatically if not already available)
+- `pandas` library 
 
 ## Installation
 
 1. Clone this repository or download the script.
 2. Ensure you have Python installed on your machine.
-3. If `pandas` is not installed, it will be automatically installed when you run the script.
+3. Install dependencies:
 
-## Usage
+   ```bash
+   pip install -r requirements.txt
 
-1. Place your JMeter CSV results file in an accessible location.
-2. Update the path to the CSV file in the script:
-
-   ```python
-   data = pd.read_csv(r"C:\path\to\your\jmeter_results.csv")
