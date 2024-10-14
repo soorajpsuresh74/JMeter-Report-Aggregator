@@ -1,5 +1,17 @@
-import os
-import pandas as pd
+try:
+    import os
+    from io import BytesIO
+    import pandas as pd
+    import boto3
+    from dotenv import load_dotenv
+    from botocore.exceptions import NoCredentialsError, ClientError
+
+except ImportError:
+    print("Error: Missing imports, Please install it by running:")
+    print("pip install -r requirements.txt")
+    exit(1)
+
+load_dotenv()
 
 
 class AggregatorForJMeter:
@@ -12,6 +24,9 @@ class AggregatorForJMeter:
 
         if self.state:
             self.make_csv()
+
+        self.s3_bucket_name = os.getenv('S3_BUCKET_NAME')
+        self.file_name = 'Aggregated_report.csv'
 
     def sample_counter(self):
         return self.grouped.size()
@@ -111,6 +126,28 @@ class AggregatorForJMeter:
         results.to_csv(file_name, index=False)
         full_path = os.path.abspath(file_name)
         print(f"Success! File saved at: {full_path}")
+        self.dump_to_s3(results)
+
+    def dump_to_s3(self, results):
+        s3 = boto3.client(
+            's3',
+            region_name=os.getenv('AWS_REGION'),
+            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
+        )
+        output_buffer = BytesIO()
+        results.to_csv(output_buffer, index=False)
+        output_buffer.seek(0)
+
+        try:
+            s3.upload_fileobj(output_buffer, self.s3_bucket_name, self.file_name)
+            print(f"Successfully uploaded {self.file_name} to S3 bucket {self.s3_bucket_name}")
+        except NoCredentialsError:
+            print("Error: AWS credentials not found.")
+        except ClientError as e:
+            print(f"Client error: {e}")
+        except Exception as e:
+            print(f"Error uploading file to S3: {e}")
 
 
 try:
