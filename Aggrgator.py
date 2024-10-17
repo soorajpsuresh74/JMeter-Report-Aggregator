@@ -1,17 +1,12 @@
-try:
-    import os
-    from io import BytesIO
-    import pandas as pd
-    import boto3
-    from dotenv import load_dotenv
-    from botocore.exceptions import NoCredentialsError, ClientError
+import os
+from io import BytesIO
+import pandas as pd
+import boto3
+from botocore.exceptions import NoCredentialsError, ClientError
 
-except ImportError:
-    print("Error: Missing imports, Please install it by running:")
-    print("pip install -r requirements.txt")
-    exit(1)
+from constants import MyLogger, Secrets
 
-load_dotenv()
+logger = MyLogger()
 
 
 class AggregatorForJMeter:
@@ -19,14 +14,7 @@ class AggregatorForJMeter:
         self.data = data
         self.data['timeStamp'] = pd.to_datetime(data['timeStamp'], unit='ms')
         self.grouped = self.data.groupby('label')
-        self.state = True
-        self.__debugger()
-
-        if self.state:
-            self.make_csv()
-
-        self.s3_bucket_name = os.getenv('S3_BUCKET_NAME')
-        self.file_name = 'Aggregated_report.csv'
+        # self.logger = MyLogger()
 
     def sample_counter(self):
         return self.grouped.size()
@@ -91,21 +79,21 @@ class AggregatorForJMeter:
 
         return received_bytes
 
-    def __debugger(self):
-        print("Sample Counter:\n", self.sample_counter())
-        print("Average Response Time:\n", self.average_response_time())
-        print("Median Response Time:\n", self.median_response_time())
-        print("90th Percentile Response Time:\n", self.percentile_90_response_times())
-        print("95th Percentile Response Time:\n", self.percentile_95_response_times())
-        print("99th Percentile Response Time:\n", self.percentile_99_response_times())
-        print("Min Response Time:\n", self.min_response_time())
-        print("Max Response Time:\n", self.max_response_time())
-        print("Error Percentage:\n", self.error_percentage())
-        print("Throughput:\n", self.calculate_throughput())
-        print("Sent Bytes (KB):\n", self.calculate_sent_bytes_in_kb())
-        print("Received Bytes (KB):\n", self.calculate_received_bytes_kb())
+    def tester(self):
+        logger.log_info(f"Sample Counter:\n, {self.sample_counter()}")
+        logger.log_info(f"Average Response Time:\n, {self.average_response_time()}")
+        logger.log_info(f"Median Response Time:\n, {self.median_response_time()}")
+        logger.log_info(f"90th Percentile Response Time:\n, {self.percentile_90_response_times()}")
+        logger.log_info(f"95th Percentile Response Time:\n, {self.percentile_95_response_times()}")
+        logger.log_info(f"99th Percentile Response Time:\n, {self.percentile_99_response_times()}")
+        logger.log_info(f"Min Response Time:\n, {self.min_response_time()}")
+        logger.log_info(f"Max Response Time:\n, {self.max_response_time()}")
+        logger.log_info(f"Error Percentage:\n, {self.error_percentage()}")
+        logger.log_info(f"Throughput:\n, {self.calculate_throughput()}")
+        logger.log_info(f"Sent Bytes (KB):\n, {self.calculate_sent_bytes_in_kb()}")
+        logger.log_info(f"Received Bytes (KB):\n, {self.calculate_received_bytes_kb()}")
 
-    def make_csv(self):
+    def create_report(self):
         results = pd.DataFrame({
             '# Samples': self.sample_counter(),
             'Average': self.average_response_time(),
@@ -122,26 +110,30 @@ class AggregatorForJMeter:
         })
         results.round(2)
 
-        file_name = 'Aggregated_report.csv'
-        results.to_csv(file_name, index=False)
-        full_path = os.path.abspath(file_name)
-        print(f"Success! File saved at: {full_path}")
-        self.dump_to_s3(results)
+        return results
 
-    def dump_to_s3(self, results):
+    def save_report_locally(self):
+        self.create_report().to_csv(Secrets.OUTPUT_FILE_NAME, index=False)
+        full_path = os.path.abspath(Secrets.OUTPUT_FILE_NAME)
+        logger.log_info(f"Success! File saved at: {full_path}")
+
+    def save_to_s3(self):
+        output_buffer = BytesIO()
+        results = self.create_report()
+        output_buffer.seek(0)
         s3 = boto3.client(
             's3',
-            region_name=os.getenv('AWS_REGION'),
-            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
-            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
+            region_name=Secrets.AWS_REGION,
+            aws_access_key_id=Secrets.AWS_ACCESS_KEY_ID,
+            aws_secret_access_key=Secrets.AWS_SECRET_ACCESS_KEY
         )
-        output_buffer = BytesIO()
-        results.to_csv(output_buffer, index=False)
+
+        results.to_csv(index=False, encoding='utf-8')
         output_buffer.seek(0)
 
         try:
-            s3.upload_fileobj(output_buffer, self.s3_bucket_name, self.file_name)
-            print(f"Successfully uploaded {self.file_name} to S3 bucket {self.s3_bucket_name}")
+            s3.upload_fileobj(output_buffer, Secrets.S3_BUCKET_NAME, Secrets.OUTPUT_FILE_NAME)
+            logger.log_info(f"Successfully uploaded {Secrets.OUTPUT_FILE_NAME} to S3 bucket {Secrets.S3_BUCKET_NAME}")
         except NoCredentialsError:
             print("Error: AWS credentials not found.")
         except ClientError as e:
@@ -151,7 +143,19 @@ class AggregatorForJMeter:
 
 
 try:
-    csv_file = pd.read_csv(input("Enter the file path: "))
-    aggregator = AggregatorForJMeter(data=csv_file)
-except RuntimeError:
-    print("runtime_error")
+    data = pd.read_csv(Secrets.FILE_PATH)
+    aggregator = AggregatorForJMeter(data=data)
+
+    if Secrets.SAVE_TO_S3:
+        aggregator.save_to_s3()
+
+    if Secrets.ENABLE_LOGGING:
+        aggregator.tester()
+
+    if Secrets.SAVE_REPORT_LOCALLY:
+        aggregator.create_report()
+
+
+except Exception as e:
+
+    logger.log_error(f"Error occur during the creation : {e}")

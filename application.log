@@ -1,0 +1,1437 @@
+2024-10-17 17:56:26,497 - INFO - Logging Initialized
+2024-10-17 17:56:26,497 - ERROR - Error occur during the creation : string indices must be integers, not 'str'
+2024-10-17 17:57:56,904 - INFO - Logging Initialized
+2024-10-17 17:57:56,904 - ERROR - Error occur during the creation : string indices must be integers, not 'str'
+2024-10-17 17:58:09,792 - INFO - Logging Initialized
+2024-10-17 17:58:09,792 - ERROR - Error occur during the creation : string indices must be integers, not 'str'
+2024-10-17 17:58:24,111 - INFO - Logging Initialized
+2024-10-17 17:58:24,112 - ERROR - Error occur during the creation : string indices must be integers, not 'str'
+2024-10-17 18:00:30,650 - INFO - Logging Initialized
+2024-10-17 18:00:30,650 - ERROR - Error occur during the creation : [Errno 2] No such file or directory: 'sample.csv                                     ; Provide your source path'
+2024-10-17 18:01:02,381 - INFO - Logging Initialized
+2024-10-17 18:01:02,381 - ERROR - Error occur during the creation : Invalid file path or buffer object type: <class 'NoneType'>
+2024-10-17 18:01:11,670 - INFO - Logging Initialized
+2024-10-17 18:01:11,670 - ERROR - Error occur during the creation : [Errno 2] No such file or directory: 'sample.csv                                     ; Provide your source path'
+2024-10-17 18:01:36,669 - INFO - Logging Initialized
+2024-10-17 18:01:36,669 - ERROR - Error occur during the creation : [Errno 2] No such file or directory: 'C:\\Users\\bornd\\PycharmProjects\\Aggregator\\sample.csv                                   ; Provide your source path'
+2024-10-17 18:03:09,796 - INFO - Logging Initialized
+2024-10-17 18:03:09,796 - ERROR - Error occur during the creation : [Errno 2] No such file or directory: 'C:\\Users\\bornd\\PycharmProjects\\Aggregator\\sample.csv                                   ; Provide your source path'
+2024-10-17 18:04:03,390 - INFO - Logging Initialized
+2024-10-17 18:04:03,390 - ERROR - Error occur during the creation : Provided region_name 'your_region                                   ; AWS region where your bucket resides' doesn't match a supported format.
+2024-10-17 18:05:02,947 - INFO - Logging Initialized
+2024-10-17 18:05:02,947 - ERROR - Error occur during the creation : name 'logger' is not defined
+2024-10-17 18:06:17,220 - INFO - Logging Initialized
+2024-10-17 18:06:17,220 - ERROR - Error occur during the creation : name 'logger' is not defined
+2024-10-17 18:14:25,905 - INFO - Logging Initialized
+2024-10-17 18:14:25,921 - INFO - Sample Counter:
+, label
+Debug Sampler                                                              100
+DoLogin/identity/do-login-1                                                100
+GetStateCity                                                               100
+Get_StateCity                                                              100
+Get_User_Application_Details                                               100
+Get_User_Application_Details/onboarding/get-user-application-details/-9    100
+Get_User_info                                                              100
+Get_User_info/identity/get-user-info/-4                                    100
+Get_application_Status                                                     100
+Get_application_Status/onboarding/get-application-status/-5                100
+ListCitizenship                                                            100
+ListCountries                                                              100
+ListEducation                                                              100
+ListEmployment                                                             100
+ListEnrollment                                                             100
+ListMajorValidSchool                                                       100
+ListSchool                                                                 100
+ListStates                                                                 100
+ListStudent                                                                100
+List_Citizenship                                                           100
+List_Countries                                                             100
+List_Education                                                             100
+List_Employment                                                            100
+List_Enrollment                                                            100
+List_MajorValidSchool                                                      100
+List_School                                                                100
+List_States                                                                100
+List_Student                                                               100
+List_occupation                                                            100
+Listoccupation                                                             100
+Login                                                                      100
+Standard_App_Settings                                                      100
+Standard_App_Settings/onboarding/standard-application-settings             100
+ValidDate                                                                  100
+Valid_Date                                                                 100
+dtype: int64
+2024-10-17 18:14:25,923 - INFO - Average Response Time:
+, label
+Debug Sampler                                                                0.07
+DoLogin/identity/do-login-1                                                669.13
+GetStateCity                                                               132.19
+Get_StateCity                                                              132.19
+Get_User_Application_Details                                               264.88
+Get_User_Application_Details/onboarding/get-user-application-details/-9    264.88
+Get_User_info                                                               70.10
+Get_User_info/identity/get-user-info/-4                                     70.10
+Get_application_Status                                                     142.05
+Get_application_Status/onboarding/get-application-status/-5                142.05
+ListCitizenship                                                            174.60
+ListCountries                                                              110.63
+ListEducation                                                              122.04
+ListEmployment                                                             143.26
+ListEnrollment                                                             137.62
+ListMajorValidSchool                                                       110.15
+ListSchool                                                                 914.29
+ListStates                                                                 111.34
+ListStudent                                                                 91.02
+List_Citizenship                                                           174.60
+List_Countries                                                             110.63
+List_Education                                                             122.04
+List_Employment                                                            143.26
+List_Enrollment                                                            137.62
+List_MajorValidSchool                                                      110.15
+List_School                                                                914.29
+List_States                                                                111.34
+List_Student                                                                91.02
+List_occupation                                                            145.24
+Listoccupation                                                             145.24
+Login                                                                      669.13
+Standard_App_Settings                                                      141.72
+Standard_App_Settings/onboarding/standard-application-settings             141.72
+ValidDate                                                                  135.61
+Valid_Date                                                                 135.61
+Name: elapsed, dtype: float64
+2024-10-17 18:14:25,924 - INFO - Median Response Time:
+, label
+Debug Sampler                                                                0.0
+DoLogin/identity/do-login-1                                                647.5
+GetStateCity                                                                68.0
+Get_StateCity                                                               68.0
+Get_User_Application_Details                                               147.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    147.0
+Get_User_info                                                               58.0
+Get_User_info/identity/get-user-info/-4                                     58.0
+Get_application_Status                                                      74.0
+Get_application_Status/onboarding/get-application-status/-5                 74.0
+ListCitizenship                                                             78.5
+ListCountries                                                               62.0
+ListEducation                                                               74.5
+ListEmployment                                                              83.0
+ListEnrollment                                                              72.5
+ListMajorValidSchool                                                        58.0
+ListSchool                                                                 907.5
+ListStates                                                                  62.5
+ListStudent                                                                 60.5
+List_Citizenship                                                            78.5
+List_Countries                                                              62.0
+List_Education                                                              74.5
+List_Employment                                                             83.0
+List_Enrollment                                                             72.5
+List_MajorValidSchool                                                       58.0
+List_School                                                                907.5
+List_States                                                                 62.5
+List_Student                                                                60.5
+List_occupation                                                             66.0
+Listoccupation                                                              66.0
+Login                                                                      647.5
+Standard_App_Settings                                                       99.0
+Standard_App_Settings/onboarding/standard-application-settings              99.0
+ValidDate                                                                   55.0
+Valid_Date                                                                  55.0
+Name: elapsed, dtype: float64
+2024-10-17 18:14:25,927 - INFO - 90th Percentile Response Time:
+, label
+Debug Sampler                                                                 0.0
+DoLogin/identity/do-login-1                                                 779.7
+GetStateCity                                                                223.2
+Get_StateCity                                                               223.2
+Get_User_Application_Details                                                650.2
+Get_User_Application_Details/onboarding/get-user-application-details/-9     650.2
+Get_User_info                                                               109.1
+Get_User_info/identity/get-user-info/-4                                     109.1
+Get_application_Status                                                      272.5
+Get_application_Status/onboarding/get-application-status/-5                 272.5
+ListCitizenship                                                             418.9
+ListCountries                                                               152.3
+ListEducation                                                               205.0
+ListEmployment                                                              223.7
+ListEnrollment                                                              218.7
+ListMajorValidSchool                                                        138.7
+ListSchool                                                                 1281.9
+ListStates                                                                  169.6
+ListStudent                                                                 113.1
+List_Citizenship                                                            418.9
+List_Countries                                                              152.3
+List_Education                                                              205.0
+List_Employment                                                             223.7
+List_Enrollment                                                             218.7
+List_MajorValidSchool                                                       138.7
+List_School                                                                1281.9
+List_States                                                                 169.6
+List_Student                                                                113.1
+List_occupation                                                             390.4
+Listoccupation                                                              390.4
+Login                                                                       779.7
+Standard_App_Settings                                                       164.6
+Standard_App_Settings/onboarding/standard-application-settings              164.6
+ValidDate                                                                   146.4
+Valid_Date                                                                  146.4
+Name: elapsed, dtype: float64
+2024-10-17 18:14:25,928 - INFO - 95th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                 814.15
+GetStateCity                                                                527.20
+Get_StateCity                                                               527.20
+Get_User_Application_Details                                                901.65
+Get_User_Application_Details/onboarding/get-user-application-details/-9     901.65
+Get_User_info                                                               124.35
+Get_User_info/identity/get-user-info/-4                                     124.35
+Get_application_Status                                                      630.40
+Get_application_Status/onboarding/get-application-status/-5                 630.40
+ListCitizenship                                                             674.35
+ListCountries                                                               428.05
+ListEducation                                                               298.20
+ListEmployment                                                              528.40
+ListEnrollment                                                              593.25
+ListMajorValidSchool                                                        508.35
+ListSchool                                                                 1560.65
+ListStates                                                                  453.65
+ListStudent                                                                 284.30
+List_Citizenship                                                            674.35
+List_Countries                                                              428.05
+List_Education                                                              298.20
+List_Employment                                                             528.40
+List_Enrollment                                                             593.25
+List_MajorValidSchool                                                       508.35
+List_School                                                                1560.65
+List_States                                                                 453.65
+List_Student                                                                284.30
+List_occupation                                                             565.90
+Listoccupation                                                              565.90
+Login                                                                       814.15
+Standard_App_Settings                                                       240.30
+Standard_App_Settings/onboarding/standard-application-settings              240.30
+ValidDate                                                                   872.35
+Valid_Date                                                                  872.35
+Name: elapsed, dtype: float64
+2024-10-17 18:14:25,934 - INFO - 99th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                1014.22
+GetStateCity                                                               1048.17
+Get_StateCity                                                              1048.17
+Get_User_Application_Details                                               1781.09
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1781.09
+Get_User_info                                                               191.46
+Get_User_info/identity/get-user-info/-4                                     191.46
+Get_application_Status                                                      902.21
+Get_application_Status/onboarding/get-application-status/-5                 902.21
+ListCitizenship                                                            1269.93
+ListCountries                                                               589.18
+ListEducation                                                               753.90
+ListEmployment                                                             1016.75
+ListEnrollment                                                              935.62
+ListMajorValidSchool                                                        919.24
+ListSchool                                                                 1754.14
+ListStates                                                                  893.56
+ListStudent                                                                 572.97
+List_Citizenship                                                           1269.93
+List_Countries                                                              589.18
+List_Education                                                              753.90
+List_Employment                                                            1016.75
+List_Enrollment                                                             935.62
+List_MajorValidSchool                                                       919.24
+List_School                                                                1754.14
+List_States                                                                 893.56
+List_Student                                                                572.97
+List_occupation                                                            1095.15
+Listoccupation                                                             1095.15
+Login                                                                      1014.22
+Standard_App_Settings                                                       862.13
+Standard_App_Settings/onboarding/standard-application-settings              862.13
+ValidDate                                                                  1310.08
+Valid_Date                                                                 1310.08
+Name: elapsed, dtype: float64
+2024-10-17 18:14:25,934 - INFO - Min Response Time:
+, label
+Debug Sampler                                                                0
+DoLogin/identity/do-login-1                                                501
+GetStateCity                                                                53
+Get_StateCity                                                               53
+Get_User_Application_Details                                                76
+Get_User_Application_Details/onboarding/get-user-application-details/-9     76
+Get_User_info                                                               46
+Get_User_info/identity/get-user-info/-4                                     46
+Get_application_Status                                                      51
+Get_application_Status/onboarding/get-application-status/-5                 51
+ListCitizenship                                                             53
+ListCountries                                                               43
+ListEducation                                                               53
+ListEmployment                                                              53
+ListEnrollment                                                              53
+ListMajorValidSchool                                                        39
+ListSchool                                                                 493
+ListStates                                                                  45
+ListStudent                                                                 46
+List_Citizenship                                                            53
+List_Countries                                                              43
+List_Education                                                              53
+List_Employment                                                             53
+List_Enrollment                                                             53
+List_MajorValidSchool                                                       39
+List_School                                                                493
+List_States                                                                 45
+List_Student                                                                46
+List_occupation                                                             46
+Listoccupation                                                              46
+Login                                                                      501
+Standard_App_Settings                                                       57
+Standard_App_Settings/onboarding/standard-application-settings              57
+ValidDate                                                                   42
+Valid_Date                                                                  42
+Name: Latency, dtype: int64
+2024-10-17 18:14:25,939 - INFO - Max Response Time:
+, label
+Debug Sampler                                                                 0
+DoLogin/identity/do-login-1                                                1036
+GetStateCity                                                               1163
+Get_StateCity                                                              1163
+Get_User_Application_Details                                               1790
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1790
+Get_User_info                                                               237
+Get_User_info/identity/get-user-info/-4                                     237
+Get_application_Status                                                     1022
+Get_application_Status/onboarding/get-application-status/-5                1022
+ListCitizenship                                                            1560
+ListCountries                                                              1399
+ListEducation                                                               942
+ListEmployment                                                             1091
+ListEnrollment                                                             1195
+ListMajorValidSchool                                                       1240
+ListSchool                                                                 2037
+ListStates                                                                 1048
+ListStudent                                                                 768
+List_Citizenship                                                           1560
+List_Countries                                                             1399
+List_Education                                                              942
+List_Employment                                                            1091
+List_Enrollment                                                            1195
+List_MajorValidSchool                                                      1240
+List_School                                                                2037
+List_States                                                                1048
+List_Student                                                                768
+List_occupation                                                            1209
+Listoccupation                                                             1209
+Login                                                                      1036
+Standard_App_Settings                                                      1271
+Standard_App_Settings/onboarding/standard-application-settings             1271
+ValidDate                                                                  1417
+Valid_Date                                                                 1417
+Name: Latency, dtype: int64
+2024-10-17 18:14:25,944 - INFO - Error Percentage:
+, label
+Debug Sampler                                                              0.0
+DoLogin/identity/do-login-1                                                0.0
+GetStateCity                                                               0.0
+Get_StateCity                                                              0.0
+Get_User_Application_Details                                               0.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.0
+Get_User_info                                                              0.0
+Get_User_info/identity/get-user-info/-4                                    0.0
+Get_application_Status                                                     0.0
+Get_application_Status/onboarding/get-application-status/-5                0.0
+ListCitizenship                                                            0.0
+ListCountries                                                              0.0
+ListEducation                                                              0.0
+ListEmployment                                                             0.0
+ListEnrollment                                                             0.0
+ListMajorValidSchool                                                       0.0
+ListSchool                                                                 0.0
+ListStates                                                                 0.0
+ListStudent                                                                0.0
+List_Citizenship                                                           0.0
+List_Countries                                                             0.0
+List_Education                                                             0.0
+List_Employment                                                            0.0
+List_Enrollment                                                            0.0
+List_MajorValidSchool                                                      0.0
+List_School                                                                0.0
+List_States                                                                0.0
+List_Student                                                               0.0
+List_occupation                                                            0.0
+Listoccupation                                                             0.0
+Login                                                                      0.0
+Standard_App_Settings                                                      0.0
+Standard_App_Settings/onboarding/standard-application-settings             0.0
+ValidDate                                                                  0.0
+Valid_Date                                                                 0.0
+dtype: float64
+2024-10-17 18:14:25,955 - INFO - Throughput:
+, label
+Debug Sampler                                                              0.380004
+DoLogin/identity/do-login-1                                                0.394501
+GetStateCity                                                               0.390598
+Get_StateCity                                                              0.384225
+Get_User_Application_Details                                               0.407952
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.401928
+Get_User_info                                                              0.397439
+Get_User_info/identity/get-user-info/-4                                    0.387466
+Get_application_Status                                                     0.403021
+Get_application_Status/onboarding/get-application-status/-5                0.397325
+ListCitizenship                                                            0.386738
+ListCountries                                                              0.385677
+ListEducation                                                              0.384280
+ListEmployment                                                             0.396123
+ListEnrollment                                                             0.389706
+ListMajorValidSchool                                                       0.407100
+ListSchool                                                                 0.395424
+ListStates                                                                 0.389485
+ListStudent                                                                0.394605
+List_Citizenship                                                           0.389742
+List_Countries                                                             0.389423
+List_Education                                                             0.386692
+List_Employment                                                            0.385622
+List_Enrollment                                                            0.395451
+List_MajorValidSchool                                                      0.407932
+List_School                                                                0.399747
+List_States                                                                0.394177
+List_Student                                                               0.396085
+List_occupation                                                            0.390649
+Listoccupation                                                             0.394197
+Login                                                                      0.404039
+Standard_App_Settings                                                      0.387450
+Standard_App_Settings/onboarding/standard-application-settings             0.378881
+ValidDate                                                                  0.400141
+Valid_Date                                                                 0.407067
+dtype: float64
+2024-10-17 18:14:25,969 - INFO - Sent Bytes (KB):
+, label
+Debug Sampler                                                              0.000000
+DoLogin/identity/do-login-1                                                0.220751
+GetStateCity                                                               0.637773
+Get_StateCity                                                              0.627368
+Get_User_Application_Details                                               0.665710
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.655880
+Get_User_info                                                              0.649719
+Get_User_info/identity/get-user-info/-4                                    0.633416
+Get_application_Status                                                     0.655303
+Get_application_Status/onboarding/get-application-status/-5                0.646041
+ListCitizenship                                                            0.626561
+ListCountries                                                              0.624089
+ListEducation                                                              0.621828
+ListEmployment                                                             0.641378
+ListEnrollment                                                             0.630988
+ListMajorValidSchool                                                       0.678235
+ListSchool                                                                 0.656466
+ListStates                                                                 0.629110
+ListStudent                                                                0.637765
+List_Citizenship                                                           0.631428
+List_Countries                                                             0.630151
+List_Education                                                             0.625730
+List_Employment                                                            0.624377
+List_Enrollment                                                            0.640290
+List_MajorValidSchool                                                      0.679621
+List_School                                                                0.663643
+List_States                                                                0.636689
+List_Student                                                               0.640157
+List_occupation                                                            0.632516
+Listoccupation                                                             0.638261
+Login                                                                      0.226088
+Standard_App_Settings                                                      0.644362
+Standard_App_Settings/onboarding/standard-application-settings             0.630112
+ValidDate                                                                  0.688133
+Valid_Date                                                                 0.700043
+dtype: float64
+2024-10-17 18:14:25,982 - INFO - Received Bytes (KB):
+, label
+Debug Sampler                                                               0.930635
+DoLogin/identity/do-login-1                                                 0.747914
+GetStateCity                                                                0.350165
+Get_StateCity                                                               0.344452
+Get_User_Application_Details                                                0.600817
+Get_User_Application_Details/onboarding/get-user-application-details/-9     0.591944
+Get_User_info                                                               0.471959
+Get_User_info/identity/get-user-info/-4                                     0.460116
+Get_application_Status                                                      0.480040
+Get_application_Status/onboarding/get-application-status/-5                 0.473255
+ListCitizenship                                                             0.405244
+ListCountries                                                               1.478324
+ListEducation                                                               0.434567
+ListEmployment                                                              0.408502
+ListEnrollment                                                              0.413682
+ListMajorValidSchool                                                        0.679427
+ListSchool                                                                 43.065548
+ListStates                                                                  0.613154
+ListStudent                                                                 0.383430
+List_Citizenship                                                            0.408392
+List_Countries                                                              1.492681
+List_Education                                                              0.437294
+List_Employment                                                             0.397673
+List_Enrollment                                                             0.419780
+List_MajorValidSchool                                                       0.680816
+List_School                                                                43.536387
+List_States                                                                 0.620540
+List_Student                                                                0.384868
+List_occupation                                                             0.739373
+Listoccupation                                                              0.746088
+Login                                                                       0.765997
+Standard_App_Settings                                                       8.781563
+Standard_App_Settings/onboarding/standard-application-settings              8.587356
+ValidDate                                                                   0.346216
+Valid_Date                                                                  0.352208
+dtype: float64
+2024-10-17 18:18:01,850 - INFO - Logging Initialized
+2024-10-17 18:18:01,886 - INFO - Sample Counter:
+, label
+Debug Sampler                                                              100
+DoLogin/identity/do-login-1                                                100
+GetStateCity                                                               100
+Get_StateCity                                                              100
+Get_User_Application_Details                                               100
+Get_User_Application_Details/onboarding/get-user-application-details/-9    100
+Get_User_info                                                              100
+Get_User_info/identity/get-user-info/-4                                    100
+Get_application_Status                                                     100
+Get_application_Status/onboarding/get-application-status/-5                100
+ListCitizenship                                                            100
+ListCountries                                                              100
+ListEducation                                                              100
+ListEmployment                                                             100
+ListEnrollment                                                             100
+ListMajorValidSchool                                                       100
+ListSchool                                                                 100
+ListStates                                                                 100
+ListStudent                                                                100
+List_Citizenship                                                           100
+List_Countries                                                             100
+List_Education                                                             100
+List_Employment                                                            100
+List_Enrollment                                                            100
+List_MajorValidSchool                                                      100
+List_School                                                                100
+List_States                                                                100
+List_Student                                                               100
+List_occupation                                                            100
+Listoccupation                                                             100
+Login                                                                      100
+Standard_App_Settings                                                      100
+Standard_App_Settings/onboarding/standard-application-settings             100
+ValidDate                                                                  100
+Valid_Date                                                                 100
+dtype: int64
+2024-10-17 18:18:01,912 - INFO - Average Response Time:
+, label
+Debug Sampler                                                                0.07
+DoLogin/identity/do-login-1                                                669.13
+GetStateCity                                                               132.19
+Get_StateCity                                                              132.19
+Get_User_Application_Details                                               264.88
+Get_User_Application_Details/onboarding/get-user-application-details/-9    264.88
+Get_User_info                                                               70.10
+Get_User_info/identity/get-user-info/-4                                     70.10
+Get_application_Status                                                     142.05
+Get_application_Status/onboarding/get-application-status/-5                142.05
+ListCitizenship                                                            174.60
+ListCountries                                                              110.63
+ListEducation                                                              122.04
+ListEmployment                                                             143.26
+ListEnrollment                                                             137.62
+ListMajorValidSchool                                                       110.15
+ListSchool                                                                 914.29
+ListStates                                                                 111.34
+ListStudent                                                                 91.02
+List_Citizenship                                                           174.60
+List_Countries                                                             110.63
+List_Education                                                             122.04
+List_Employment                                                            143.26
+List_Enrollment                                                            137.62
+List_MajorValidSchool                                                      110.15
+List_School                                                                914.29
+List_States                                                                111.34
+List_Student                                                                91.02
+List_occupation                                                            145.24
+Listoccupation                                                             145.24
+Login                                                                      669.13
+Standard_App_Settings                                                      141.72
+Standard_App_Settings/onboarding/standard-application-settings             141.72
+ValidDate                                                                  135.61
+Valid_Date                                                                 135.61
+Name: elapsed, dtype: float64
+2024-10-17 18:18:01,941 - INFO - Median Response Time:
+, label
+Debug Sampler                                                                0.0
+DoLogin/identity/do-login-1                                                647.5
+GetStateCity                                                                68.0
+Get_StateCity                                                               68.0
+Get_User_Application_Details                                               147.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    147.0
+Get_User_info                                                               58.0
+Get_User_info/identity/get-user-info/-4                                     58.0
+Get_application_Status                                                      74.0
+Get_application_Status/onboarding/get-application-status/-5                 74.0
+ListCitizenship                                                             78.5
+ListCountries                                                               62.0
+ListEducation                                                               74.5
+ListEmployment                                                              83.0
+ListEnrollment                                                              72.5
+ListMajorValidSchool                                                        58.0
+ListSchool                                                                 907.5
+ListStates                                                                  62.5
+ListStudent                                                                 60.5
+List_Citizenship                                                            78.5
+List_Countries                                                              62.0
+List_Education                                                              74.5
+List_Employment                                                             83.0
+List_Enrollment                                                             72.5
+List_MajorValidSchool                                                       58.0
+List_School                                                                907.5
+List_States                                                                 62.5
+List_Student                                                                60.5
+List_occupation                                                             66.0
+Listoccupation                                                              66.0
+Login                                                                      647.5
+Standard_App_Settings                                                       99.0
+Standard_App_Settings/onboarding/standard-application-settings              99.0
+ValidDate                                                                   55.0
+Valid_Date                                                                  55.0
+Name: elapsed, dtype: float64
+2024-10-17 18:18:01,970 - INFO - 90th Percentile Response Time:
+, label
+Debug Sampler                                                                 0.0
+DoLogin/identity/do-login-1                                                 779.7
+GetStateCity                                                                223.2
+Get_StateCity                                                               223.2
+Get_User_Application_Details                                                650.2
+Get_User_Application_Details/onboarding/get-user-application-details/-9     650.2
+Get_User_info                                                               109.1
+Get_User_info/identity/get-user-info/-4                                     109.1
+Get_application_Status                                                      272.5
+Get_application_Status/onboarding/get-application-status/-5                 272.5
+ListCitizenship                                                             418.9
+ListCountries                                                               152.3
+ListEducation                                                               205.0
+ListEmployment                                                              223.7
+ListEnrollment                                                              218.7
+ListMajorValidSchool                                                        138.7
+ListSchool                                                                 1281.9
+ListStates                                                                  169.6
+ListStudent                                                                 113.1
+List_Citizenship                                                            418.9
+List_Countries                                                              152.3
+List_Education                                                              205.0
+List_Employment                                                             223.7
+List_Enrollment                                                             218.7
+List_MajorValidSchool                                                       138.7
+List_School                                                                1281.9
+List_States                                                                 169.6
+List_Student                                                                113.1
+List_occupation                                                             390.4
+Listoccupation                                                              390.4
+Login                                                                       779.7
+Standard_App_Settings                                                       164.6
+Standard_App_Settings/onboarding/standard-application-settings              164.6
+ValidDate                                                                   146.4
+Valid_Date                                                                  146.4
+Name: elapsed, dtype: float64
+2024-10-17 18:18:01,994 - INFO - 95th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                 814.15
+GetStateCity                                                                527.20
+Get_StateCity                                                               527.20
+Get_User_Application_Details                                                901.65
+Get_User_Application_Details/onboarding/get-user-application-details/-9     901.65
+Get_User_info                                                               124.35
+Get_User_info/identity/get-user-info/-4                                     124.35
+Get_application_Status                                                      630.40
+Get_application_Status/onboarding/get-application-status/-5                 630.40
+ListCitizenship                                                             674.35
+ListCountries                                                               428.05
+ListEducation                                                               298.20
+ListEmployment                                                              528.40
+ListEnrollment                                                              593.25
+ListMajorValidSchool                                                        508.35
+ListSchool                                                                 1560.65
+ListStates                                                                  453.65
+ListStudent                                                                 284.30
+List_Citizenship                                                            674.35
+List_Countries                                                              428.05
+List_Education                                                              298.20
+List_Employment                                                             528.40
+List_Enrollment                                                             593.25
+List_MajorValidSchool                                                       508.35
+List_School                                                                1560.65
+List_States                                                                 453.65
+List_Student                                                                284.30
+List_occupation                                                             565.90
+Listoccupation                                                              565.90
+Login                                                                       814.15
+Standard_App_Settings                                                       240.30
+Standard_App_Settings/onboarding/standard-application-settings              240.30
+ValidDate                                                                   872.35
+Valid_Date                                                                  872.35
+Name: elapsed, dtype: float64
+2024-10-17 18:18:02,019 - INFO - 99th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                1014.22
+GetStateCity                                                               1048.17
+Get_StateCity                                                              1048.17
+Get_User_Application_Details                                               1781.09
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1781.09
+Get_User_info                                                               191.46
+Get_User_info/identity/get-user-info/-4                                     191.46
+Get_application_Status                                                      902.21
+Get_application_Status/onboarding/get-application-status/-5                 902.21
+ListCitizenship                                                            1269.93
+ListCountries                                                               589.18
+ListEducation                                                               753.90
+ListEmployment                                                             1016.75
+ListEnrollment                                                              935.62
+ListMajorValidSchool                                                        919.24
+ListSchool                                                                 1754.14
+ListStates                                                                  893.56
+ListStudent                                                                 572.97
+List_Citizenship                                                           1269.93
+List_Countries                                                              589.18
+List_Education                                                              753.90
+List_Employment                                                            1016.75
+List_Enrollment                                                             935.62
+List_MajorValidSchool                                                       919.24
+List_School                                                                1754.14
+List_States                                                                 893.56
+List_Student                                                                572.97
+List_occupation                                                            1095.15
+Listoccupation                                                             1095.15
+Login                                                                      1014.22
+Standard_App_Settings                                                       862.13
+Standard_App_Settings/onboarding/standard-application-settings              862.13
+ValidDate                                                                  1310.08
+Valid_Date                                                                 1310.08
+Name: elapsed, dtype: float64
+2024-10-17 18:18:02,022 - INFO - Min Response Time:
+, label
+Debug Sampler                                                                0
+DoLogin/identity/do-login-1                                                501
+GetStateCity                                                                53
+Get_StateCity                                                               53
+Get_User_Application_Details                                                76
+Get_User_Application_Details/onboarding/get-user-application-details/-9     76
+Get_User_info                                                               46
+Get_User_info/identity/get-user-info/-4                                     46
+Get_application_Status                                                      51
+Get_application_Status/onboarding/get-application-status/-5                 51
+ListCitizenship                                                             53
+ListCountries                                                               43
+ListEducation                                                               53
+ListEmployment                                                              53
+ListEnrollment                                                              53
+ListMajorValidSchool                                                        39
+ListSchool                                                                 493
+ListStates                                                                  45
+ListStudent                                                                 46
+List_Citizenship                                                            53
+List_Countries                                                              43
+List_Education                                                              53
+List_Employment                                                             53
+List_Enrollment                                                             53
+List_MajorValidSchool                                                       39
+List_School                                                                493
+List_States                                                                 45
+List_Student                                                                46
+List_occupation                                                             46
+Listoccupation                                                              46
+Login                                                                      501
+Standard_App_Settings                                                       57
+Standard_App_Settings/onboarding/standard-application-settings              57
+ValidDate                                                                   42
+Valid_Date                                                                  42
+Name: Latency, dtype: int64
+2024-10-17 18:18:02,025 - INFO - Max Response Time:
+, label
+Debug Sampler                                                                 0
+DoLogin/identity/do-login-1                                                1036
+GetStateCity                                                               1163
+Get_StateCity                                                              1163
+Get_User_Application_Details                                               1790
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1790
+Get_User_info                                                               237
+Get_User_info/identity/get-user-info/-4                                     237
+Get_application_Status                                                     1022
+Get_application_Status/onboarding/get-application-status/-5                1022
+ListCitizenship                                                            1560
+ListCountries                                                              1399
+ListEducation                                                               942
+ListEmployment                                                             1091
+ListEnrollment                                                             1195
+ListMajorValidSchool                                                       1240
+ListSchool                                                                 2037
+ListStates                                                                 1048
+ListStudent                                                                 768
+List_Citizenship                                                           1560
+List_Countries                                                             1399
+List_Education                                                              942
+List_Employment                                                            1091
+List_Enrollment                                                            1195
+List_MajorValidSchool                                                      1240
+List_School                                                                2037
+List_States                                                                1048
+List_Student                                                                768
+List_occupation                                                            1209
+Listoccupation                                                             1209
+Login                                                                      1036
+Standard_App_Settings                                                      1271
+Standard_App_Settings/onboarding/standard-application-settings             1271
+ValidDate                                                                  1417
+Valid_Date                                                                 1417
+Name: Latency, dtype: int64
+2024-10-17 18:18:02,067 - INFO - Error Percentage:
+, label
+Debug Sampler                                                              0.0
+DoLogin/identity/do-login-1                                                0.0
+GetStateCity                                                               0.0
+Get_StateCity                                                              0.0
+Get_User_Application_Details                                               0.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.0
+Get_User_info                                                              0.0
+Get_User_info/identity/get-user-info/-4                                    0.0
+Get_application_Status                                                     0.0
+Get_application_Status/onboarding/get-application-status/-5                0.0
+ListCitizenship                                                            0.0
+ListCountries                                                              0.0
+ListEducation                                                              0.0
+ListEmployment                                                             0.0
+ListEnrollment                                                             0.0
+ListMajorValidSchool                                                       0.0
+ListSchool                                                                 0.0
+ListStates                                                                 0.0
+ListStudent                                                                0.0
+List_Citizenship                                                           0.0
+List_Countries                                                             0.0
+List_Education                                                             0.0
+List_Employment                                                            0.0
+List_Enrollment                                                            0.0
+List_MajorValidSchool                                                      0.0
+List_School                                                                0.0
+List_States                                                                0.0
+List_Student                                                               0.0
+List_occupation                                                            0.0
+Listoccupation                                                             0.0
+Login                                                                      0.0
+Standard_App_Settings                                                      0.0
+Standard_App_Settings/onboarding/standard-application-settings             0.0
+ValidDate                                                                  0.0
+Valid_Date                                                                 0.0
+dtype: float64
+2024-10-17 18:18:02,089 - INFO - Throughput:
+, label
+Debug Sampler                                                              0.380004
+DoLogin/identity/do-login-1                                                0.394501
+GetStateCity                                                               0.390598
+Get_StateCity                                                              0.384225
+Get_User_Application_Details                                               0.407952
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.401928
+Get_User_info                                                              0.397439
+Get_User_info/identity/get-user-info/-4                                    0.387466
+Get_application_Status                                                     0.403021
+Get_application_Status/onboarding/get-application-status/-5                0.397325
+ListCitizenship                                                            0.386738
+ListCountries                                                              0.385677
+ListEducation                                                              0.384280
+ListEmployment                                                             0.396123
+ListEnrollment                                                             0.389706
+ListMajorValidSchool                                                       0.407100
+ListSchool                                                                 0.395424
+ListStates                                                                 0.389485
+ListStudent                                                                0.394605
+List_Citizenship                                                           0.389742
+List_Countries                                                             0.389423
+List_Education                                                             0.386692
+List_Employment                                                            0.385622
+List_Enrollment                                                            0.395451
+List_MajorValidSchool                                                      0.407932
+List_School                                                                0.399747
+List_States                                                                0.394177
+List_Student                                                               0.396085
+List_occupation                                                            0.390649
+Listoccupation                                                             0.394197
+Login                                                                      0.404039
+Standard_App_Settings                                                      0.387450
+Standard_App_Settings/onboarding/standard-application-settings             0.378881
+ValidDate                                                                  0.400141
+Valid_Date                                                                 0.407067
+dtype: float64
+2024-10-17 18:18:02,120 - INFO - Sent Bytes (KB):
+, label
+Debug Sampler                                                              0.000000
+DoLogin/identity/do-login-1                                                0.220751
+GetStateCity                                                               0.637773
+Get_StateCity                                                              0.627368
+Get_User_Application_Details                                               0.665710
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.655880
+Get_User_info                                                              0.649719
+Get_User_info/identity/get-user-info/-4                                    0.633416
+Get_application_Status                                                     0.655303
+Get_application_Status/onboarding/get-application-status/-5                0.646041
+ListCitizenship                                                            0.626561
+ListCountries                                                              0.624089
+ListEducation                                                              0.621828
+ListEmployment                                                             0.641378
+ListEnrollment                                                             0.630988
+ListMajorValidSchool                                                       0.678235
+ListSchool                                                                 0.656466
+ListStates                                                                 0.629110
+ListStudent                                                                0.637765
+List_Citizenship                                                           0.631428
+List_Countries                                                             0.630151
+List_Education                                                             0.625730
+List_Employment                                                            0.624377
+List_Enrollment                                                            0.640290
+List_MajorValidSchool                                                      0.679621
+List_School                                                                0.663643
+List_States                                                                0.636689
+List_Student                                                               0.640157
+List_occupation                                                            0.632516
+Listoccupation                                                             0.638261
+Login                                                                      0.226088
+Standard_App_Settings                                                      0.644362
+Standard_App_Settings/onboarding/standard-application-settings             0.630112
+ValidDate                                                                  0.688133
+Valid_Date                                                                 0.700043
+dtype: float64
+2024-10-17 18:18:02,154 - INFO - Received Bytes (KB):
+, label
+Debug Sampler                                                               0.930635
+DoLogin/identity/do-login-1                                                 0.747914
+GetStateCity                                                                0.350165
+Get_StateCity                                                               0.344452
+Get_User_Application_Details                                                0.600817
+Get_User_Application_Details/onboarding/get-user-application-details/-9     0.591944
+Get_User_info                                                               0.471959
+Get_User_info/identity/get-user-info/-4                                     0.460116
+Get_application_Status                                                      0.480040
+Get_application_Status/onboarding/get-application-status/-5                 0.473255
+ListCitizenship                                                             0.405244
+ListCountries                                                               1.478324
+ListEducation                                                               0.434567
+ListEmployment                                                              0.408502
+ListEnrollment                                                              0.413682
+ListMajorValidSchool                                                        0.679427
+ListSchool                                                                 43.065548
+ListStates                                                                  0.613154
+ListStudent                                                                 0.383430
+List_Citizenship                                                            0.408392
+List_Countries                                                              1.492681
+List_Education                                                              0.437294
+List_Employment                                                             0.397673
+List_Enrollment                                                             0.419780
+List_MajorValidSchool                                                       0.680816
+List_School                                                                43.536387
+List_States                                                                 0.620540
+List_Student                                                                0.384868
+List_occupation                                                             0.739373
+Listoccupation                                                              0.746088
+Login                                                                       0.765997
+Standard_App_Settings                                                       8.781563
+Standard_App_Settings/onboarding/standard-application-settings              8.587356
+ValidDate                                                                   0.346216
+Valid_Date                                                                  0.352208
+dtype: float64
+2024-10-17 18:18:17,684 - INFO - Logging Initialized
+2024-10-17 18:18:17,712 - INFO - Sample Counter:
+, label
+Debug Sampler                                                              100
+DoLogin/identity/do-login-1                                                100
+GetStateCity                                                               100
+Get_StateCity                                                              100
+Get_User_Application_Details                                               100
+Get_User_Application_Details/onboarding/get-user-application-details/-9    100
+Get_User_info                                                              100
+Get_User_info/identity/get-user-info/-4                                    100
+Get_application_Status                                                     100
+Get_application_Status/onboarding/get-application-status/-5                100
+ListCitizenship                                                            100
+ListCountries                                                              100
+ListEducation                                                              100
+ListEmployment                                                             100
+ListEnrollment                                                             100
+ListMajorValidSchool                                                       100
+ListSchool                                                                 100
+ListStates                                                                 100
+ListStudent                                                                100
+List_Citizenship                                                           100
+List_Countries                                                             100
+List_Education                                                             100
+List_Employment                                                            100
+List_Enrollment                                                            100
+List_MajorValidSchool                                                      100
+List_School                                                                100
+List_States                                                                100
+List_Student                                                               100
+List_occupation                                                            100
+Listoccupation                                                             100
+Login                                                                      100
+Standard_App_Settings                                                      100
+Standard_App_Settings/onboarding/standard-application-settings             100
+ValidDate                                                                  100
+Valid_Date                                                                 100
+dtype: int64
+2024-10-17 18:18:17,735 - INFO - Average Response Time:
+, label
+Debug Sampler                                                                0.07
+DoLogin/identity/do-login-1                                                669.13
+GetStateCity                                                               132.19
+Get_StateCity                                                              132.19
+Get_User_Application_Details                                               264.88
+Get_User_Application_Details/onboarding/get-user-application-details/-9    264.88
+Get_User_info                                                               70.10
+Get_User_info/identity/get-user-info/-4                                     70.10
+Get_application_Status                                                     142.05
+Get_application_Status/onboarding/get-application-status/-5                142.05
+ListCitizenship                                                            174.60
+ListCountries                                                              110.63
+ListEducation                                                              122.04
+ListEmployment                                                             143.26
+ListEnrollment                                                             137.62
+ListMajorValidSchool                                                       110.15
+ListSchool                                                                 914.29
+ListStates                                                                 111.34
+ListStudent                                                                 91.02
+List_Citizenship                                                           174.60
+List_Countries                                                             110.63
+List_Education                                                             122.04
+List_Employment                                                            143.26
+List_Enrollment                                                            137.62
+List_MajorValidSchool                                                      110.15
+List_School                                                                914.29
+List_States                                                                111.34
+List_Student                                                                91.02
+List_occupation                                                            145.24
+Listoccupation                                                             145.24
+Login                                                                      669.13
+Standard_App_Settings                                                      141.72
+Standard_App_Settings/onboarding/standard-application-settings             141.72
+ValidDate                                                                  135.61
+Valid_Date                                                                 135.61
+Name: elapsed, dtype: float64
+2024-10-17 18:18:17,761 - INFO - Median Response Time:
+, label
+Debug Sampler                                                                0.0
+DoLogin/identity/do-login-1                                                647.5
+GetStateCity                                                                68.0
+Get_StateCity                                                               68.0
+Get_User_Application_Details                                               147.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    147.0
+Get_User_info                                                               58.0
+Get_User_info/identity/get-user-info/-4                                     58.0
+Get_application_Status                                                      74.0
+Get_application_Status/onboarding/get-application-status/-5                 74.0
+ListCitizenship                                                             78.5
+ListCountries                                                               62.0
+ListEducation                                                               74.5
+ListEmployment                                                              83.0
+ListEnrollment                                                              72.5
+ListMajorValidSchool                                                        58.0
+ListSchool                                                                 907.5
+ListStates                                                                  62.5
+ListStudent                                                                 60.5
+List_Citizenship                                                            78.5
+List_Countries                                                              62.0
+List_Education                                                              74.5
+List_Employment                                                             83.0
+List_Enrollment                                                             72.5
+List_MajorValidSchool                                                       58.0
+List_School                                                                907.5
+List_States                                                                 62.5
+List_Student                                                                60.5
+List_occupation                                                             66.0
+Listoccupation                                                              66.0
+Login                                                                      647.5
+Standard_App_Settings                                                       99.0
+Standard_App_Settings/onboarding/standard-application-settings              99.0
+ValidDate                                                                   55.0
+Valid_Date                                                                  55.0
+Name: elapsed, dtype: float64
+2024-10-17 18:18:17,791 - INFO - 90th Percentile Response Time:
+, label
+Debug Sampler                                                                 0.0
+DoLogin/identity/do-login-1                                                 779.7
+GetStateCity                                                                223.2
+Get_StateCity                                                               223.2
+Get_User_Application_Details                                                650.2
+Get_User_Application_Details/onboarding/get-user-application-details/-9     650.2
+Get_User_info                                                               109.1
+Get_User_info/identity/get-user-info/-4                                     109.1
+Get_application_Status                                                      272.5
+Get_application_Status/onboarding/get-application-status/-5                 272.5
+ListCitizenship                                                             418.9
+ListCountries                                                               152.3
+ListEducation                                                               205.0
+ListEmployment                                                              223.7
+ListEnrollment                                                              218.7
+ListMajorValidSchool                                                        138.7
+ListSchool                                                                 1281.9
+ListStates                                                                  169.6
+ListStudent                                                                 113.1
+List_Citizenship                                                            418.9
+List_Countries                                                              152.3
+List_Education                                                              205.0
+List_Employment                                                             223.7
+List_Enrollment                                                             218.7
+List_MajorValidSchool                                                       138.7
+List_School                                                                1281.9
+List_States                                                                 169.6
+List_Student                                                                113.1
+List_occupation                                                             390.4
+Listoccupation                                                              390.4
+Login                                                                       779.7
+Standard_App_Settings                                                       164.6
+Standard_App_Settings/onboarding/standard-application-settings              164.6
+ValidDate                                                                   146.4
+Valid_Date                                                                  146.4
+Name: elapsed, dtype: float64
+2024-10-17 18:18:17,815 - INFO - 95th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                 814.15
+GetStateCity                                                                527.20
+Get_StateCity                                                               527.20
+Get_User_Application_Details                                                901.65
+Get_User_Application_Details/onboarding/get-user-application-details/-9     901.65
+Get_User_info                                                               124.35
+Get_User_info/identity/get-user-info/-4                                     124.35
+Get_application_Status                                                      630.40
+Get_application_Status/onboarding/get-application-status/-5                 630.40
+ListCitizenship                                                             674.35
+ListCountries                                                               428.05
+ListEducation                                                               298.20
+ListEmployment                                                              528.40
+ListEnrollment                                                              593.25
+ListMajorValidSchool                                                        508.35
+ListSchool                                                                 1560.65
+ListStates                                                                  453.65
+ListStudent                                                                 284.30
+List_Citizenship                                                            674.35
+List_Countries                                                              428.05
+List_Education                                                              298.20
+List_Employment                                                             528.40
+List_Enrollment                                                             593.25
+List_MajorValidSchool                                                       508.35
+List_School                                                                1560.65
+List_States                                                                 453.65
+List_Student                                                                284.30
+List_occupation                                                             565.90
+Listoccupation                                                              565.90
+Login                                                                       814.15
+Standard_App_Settings                                                       240.30
+Standard_App_Settings/onboarding/standard-application-settings              240.30
+ValidDate                                                                   872.35
+Valid_Date                                                                  872.35
+Name: elapsed, dtype: float64
+2024-10-17 18:18:17,842 - INFO - 99th Percentile Response Time:
+, label
+Debug Sampler                                                                 1.00
+DoLogin/identity/do-login-1                                                1014.22
+GetStateCity                                                               1048.17
+Get_StateCity                                                              1048.17
+Get_User_Application_Details                                               1781.09
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1781.09
+Get_User_info                                                               191.46
+Get_User_info/identity/get-user-info/-4                                     191.46
+Get_application_Status                                                      902.21
+Get_application_Status/onboarding/get-application-status/-5                 902.21
+ListCitizenship                                                            1269.93
+ListCountries                                                               589.18
+ListEducation                                                               753.90
+ListEmployment                                                             1016.75
+ListEnrollment                                                              935.62
+ListMajorValidSchool                                                        919.24
+ListSchool                                                                 1754.14
+ListStates                                                                  893.56
+ListStudent                                                                 572.97
+List_Citizenship                                                           1269.93
+List_Countries                                                              589.18
+List_Education                                                              753.90
+List_Employment                                                            1016.75
+List_Enrollment                                                             935.62
+List_MajorValidSchool                                                       919.24
+List_School                                                                1754.14
+List_States                                                                 893.56
+List_Student                                                                572.97
+List_occupation                                                            1095.15
+Listoccupation                                                             1095.15
+Login                                                                      1014.22
+Standard_App_Settings                                                       862.13
+Standard_App_Settings/onboarding/standard-application-settings              862.13
+ValidDate                                                                  1310.08
+Valid_Date                                                                 1310.08
+Name: elapsed, dtype: float64
+2024-10-17 18:18:17,845 - INFO - Min Response Time:
+, label
+Debug Sampler                                                                0
+DoLogin/identity/do-login-1                                                501
+GetStateCity                                                                53
+Get_StateCity                                                               53
+Get_User_Application_Details                                                76
+Get_User_Application_Details/onboarding/get-user-application-details/-9     76
+Get_User_info                                                               46
+Get_User_info/identity/get-user-info/-4                                     46
+Get_application_Status                                                      51
+Get_application_Status/onboarding/get-application-status/-5                 51
+ListCitizenship                                                             53
+ListCountries                                                               43
+ListEducation                                                               53
+ListEmployment                                                              53
+ListEnrollment                                                              53
+ListMajorValidSchool                                                        39
+ListSchool                                                                 493
+ListStates                                                                  45
+ListStudent                                                                 46
+List_Citizenship                                                            53
+List_Countries                                                              43
+List_Education                                                              53
+List_Employment                                                             53
+List_Enrollment                                                             53
+List_MajorValidSchool                                                       39
+List_School                                                                493
+List_States                                                                 45
+List_Student                                                                46
+List_occupation                                                             46
+Listoccupation                                                              46
+Login                                                                      501
+Standard_App_Settings                                                       57
+Standard_App_Settings/onboarding/standard-application-settings              57
+ValidDate                                                                   42
+Valid_Date                                                                  42
+Name: Latency, dtype: int64
+2024-10-17 18:18:17,848 - INFO - Max Response Time:
+, label
+Debug Sampler                                                                 0
+DoLogin/identity/do-login-1                                                1036
+GetStateCity                                                               1163
+Get_StateCity                                                              1163
+Get_User_Application_Details                                               1790
+Get_User_Application_Details/onboarding/get-user-application-details/-9    1790
+Get_User_info                                                               237
+Get_User_info/identity/get-user-info/-4                                     237
+Get_application_Status                                                     1022
+Get_application_Status/onboarding/get-application-status/-5                1022
+ListCitizenship                                                            1560
+ListCountries                                                              1399
+ListEducation                                                               942
+ListEmployment                                                             1091
+ListEnrollment                                                             1195
+ListMajorValidSchool                                                       1240
+ListSchool                                                                 2037
+ListStates                                                                 1048
+ListStudent                                                                 768
+List_Citizenship                                                           1560
+List_Countries                                                             1399
+List_Education                                                              942
+List_Employment                                                            1091
+List_Enrollment                                                            1195
+List_MajorValidSchool                                                      1240
+List_School                                                                2037
+List_States                                                                1048
+List_Student                                                                768
+List_occupation                                                            1209
+Listoccupation                                                             1209
+Login                                                                      1036
+Standard_App_Settings                                                      1271
+Standard_App_Settings/onboarding/standard-application-settings             1271
+ValidDate                                                                  1417
+Valid_Date                                                                 1417
+Name: Latency, dtype: int64
+2024-10-17 18:18:17,887 - INFO - Error Percentage:
+, label
+Debug Sampler                                                              0.0
+DoLogin/identity/do-login-1                                                0.0
+GetStateCity                                                               0.0
+Get_StateCity                                                              0.0
+Get_User_Application_Details                                               0.0
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.0
+Get_User_info                                                              0.0
+Get_User_info/identity/get-user-info/-4                                    0.0
+Get_application_Status                                                     0.0
+Get_application_Status/onboarding/get-application-status/-5                0.0
+ListCitizenship                                                            0.0
+ListCountries                                                              0.0
+ListEducation                                                              0.0
+ListEmployment                                                             0.0
+ListEnrollment                                                             0.0
+ListMajorValidSchool                                                       0.0
+ListSchool                                                                 0.0
+ListStates                                                                 0.0
+ListStudent                                                                0.0
+List_Citizenship                                                           0.0
+List_Countries                                                             0.0
+List_Education                                                             0.0
+List_Employment                                                            0.0
+List_Enrollment                                                            0.0
+List_MajorValidSchool                                                      0.0
+List_School                                                                0.0
+List_States                                                                0.0
+List_Student                                                               0.0
+List_occupation                                                            0.0
+Listoccupation                                                             0.0
+Login                                                                      0.0
+Standard_App_Settings                                                      0.0
+Standard_App_Settings/onboarding/standard-application-settings             0.0
+ValidDate                                                                  0.0
+Valid_Date                                                                 0.0
+dtype: float64
+2024-10-17 18:18:17,911 - INFO - Throughput:
+, label
+Debug Sampler                                                              0.380004
+DoLogin/identity/do-login-1                                                0.394501
+GetStateCity                                                               0.390598
+Get_StateCity                                                              0.384225
+Get_User_Application_Details                                               0.407952
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.401928
+Get_User_info                                                              0.397439
+Get_User_info/identity/get-user-info/-4                                    0.387466
+Get_application_Status                                                     0.403021
+Get_application_Status/onboarding/get-application-status/-5                0.397325
+ListCitizenship                                                            0.386738
+ListCountries                                                              0.385677
+ListEducation                                                              0.384280
+ListEmployment                                                             0.396123
+ListEnrollment                                                             0.389706
+ListMajorValidSchool                                                       0.407100
+ListSchool                                                                 0.395424
+ListStates                                                                 0.389485
+ListStudent                                                                0.394605
+List_Citizenship                                                           0.389742
+List_Countries                                                             0.389423
+List_Education                                                             0.386692
+List_Employment                                                            0.385622
+List_Enrollment                                                            0.395451
+List_MajorValidSchool                                                      0.407932
+List_School                                                                0.399747
+List_States                                                                0.394177
+List_Student                                                               0.396085
+List_occupation                                                            0.390649
+Listoccupation                                                             0.394197
+Login                                                                      0.404039
+Standard_App_Settings                                                      0.387450
+Standard_App_Settings/onboarding/standard-application-settings             0.378881
+ValidDate                                                                  0.400141
+Valid_Date                                                                 0.407067
+dtype: float64
+2024-10-17 18:18:17,943 - INFO - Sent Bytes (KB):
+, label
+Debug Sampler                                                              0.000000
+DoLogin/identity/do-login-1                                                0.220751
+GetStateCity                                                               0.637773
+Get_StateCity                                                              0.627368
+Get_User_Application_Details                                               0.665710
+Get_User_Application_Details/onboarding/get-user-application-details/-9    0.655880
+Get_User_info                                                              0.649719
+Get_User_info/identity/get-user-info/-4                                    0.633416
+Get_application_Status                                                     0.655303
+Get_application_Status/onboarding/get-application-status/-5                0.646041
+ListCitizenship                                                            0.626561
+ListCountries                                                              0.624089
+ListEducation                                                              0.621828
+ListEmployment                                                             0.641378
+ListEnrollment                                                             0.630988
+ListMajorValidSchool                                                       0.678235
+ListSchool                                                                 0.656466
+ListStates                                                                 0.629110
+ListStudent                                                                0.637765
+List_Citizenship                                                           0.631428
+List_Countries                                                             0.630151
+List_Education                                                             0.625730
+List_Employment                                                            0.624377
+List_Enrollment                                                            0.640290
+List_MajorValidSchool                                                      0.679621
+List_School                                                                0.663643
+List_States                                                                0.636689
+List_Student                                                               0.640157
+List_occupation                                                            0.632516
+Listoccupation                                                             0.638261
+Login                                                                      0.226088
+Standard_App_Settings                                                      0.644362
+Standard_App_Settings/onboarding/standard-application-settings             0.630112
+ValidDate                                                                  0.688133
+Valid_Date                                                                 0.700043
+dtype: float64
+2024-10-17 18:18:17,975 - INFO - Received Bytes (KB):
+, label
+Debug Sampler                                                               0.930635
+DoLogin/identity/do-login-1                                                 0.747914
+GetStateCity                                                                0.350165
+Get_StateCity                                                               0.344452
+Get_User_Application_Details                                                0.600817
+Get_User_Application_Details/onboarding/get-user-application-details/-9     0.591944
+Get_User_info                                                               0.471959
+Get_User_info/identity/get-user-info/-4                                     0.460116
+Get_application_Status                                                      0.480040
+Get_application_Status/onboarding/get-application-status/-5                 0.473255
+ListCitizenship                                                             0.405244
+ListCountries                                                               1.478324
+ListEducation                                                               0.434567
+ListEmployment                                                              0.408502
+ListEnrollment                                                              0.413682
+ListMajorValidSchool                                                        0.679427
+ListSchool                                                                 43.065548
+ListStates                                                                  0.613154
+ListStudent                                                                 0.383430
+List_Citizenship                                                            0.408392
+List_Countries                                                              1.492681
+List_Education                                                              0.437294
+List_Employment                                                             0.397673
+List_Enrollment                                                             0.419780
+List_MajorValidSchool                                                       0.680816
+List_School                                                                43.536387
+List_States                                                                 0.620540
+List_Student                                                                0.384868
+List_occupation                                                             0.739373
+Listoccupation                                                              0.746088
+Login                                                                       0.765997
+Standard_App_Settings                                                       8.781563
+Standard_App_Settings/onboarding/standard-application-settings              8.587356
+ValidDate                                                                   0.346216
+Valid_Date                                                                  0.352208
+dtype: float64
+2024-10-17 18:18:56,275 - INFO - Logging Initialized
+2024-10-17 18:18:56,394 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-10-17 18:18:56,460 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-10-17 18:18:56,483 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-10-17 18:18:56,529 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-10-17 18:18:56,532 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-10-17 18:18:56,549 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-10-17 18:18:56,566 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-10-17 18:18:56,635 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-10-17 18:18:56,637 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-10-17 18:18:56,637 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-10-17 18:18:56,638 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-10-17 18:18:56,659 - ERROR - Error occur during the creation : Provided region_name 'your_region' doesn't match a supported format.
+2024-10-17 18:19:34,670 - INFO - Logging Initialized
+2024-10-17 18:19:56,625 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-10-17 18:19:56,693 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-10-17 18:19:56,720 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-10-17 18:19:56,762 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-10-17 18:19:56,765 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-10-17 18:19:56,782 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-10-17 18:19:56,799 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-10-17 18:19:56,867 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-10-17 18:19:56,869 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-10-17 18:19:56,869 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-10-17 18:19:56,870 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-10-17 18:20:22,132 - ERROR - Error occur during the creation : Provided region_name 'your_region' doesn't match a supported format.
+2024-10-17 18:20:29,459 - INFO - Logging Initialized
+2024-10-17 18:20:43,825 - INFO - Logging Initialized
+2024-10-17 18:21:05,995 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-10-17 18:21:06,069 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-10-17 18:21:06,096 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-10-17 18:21:06,144 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-10-17 18:21:06,146 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-10-17 18:21:06,166 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-10-17 18:21:06,184 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-10-17 18:21:06,254 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-10-17 18:21:06,256 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-10-17 18:21:06,257 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-10-17 18:21:06,258 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-10-17 18:21:13,454 - ERROR - Error occur during the creation : Provided region_name 'your_region' doesn't match a supported format.
+2024-10-17 18:22:16,551 - INFO - Logging Initialized
+2024-10-17 18:23:18,029 - INFO - Logging Initialized
